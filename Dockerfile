@@ -9,4 +9,4 @@ RUN ./bin/rake assets:precompile
 COPY secrets.yml ./config/
 COPY crawl_at_once.rb ./script
 EXPOSE 5000
-CMD foreman start -p $PORT web=1,crawler=0
+CMD foreman start -p $PORT
